@@ -116,7 +116,7 @@ static: $(LIB_OBJECTS)
 	$(ARCHIVER) $(ARCHIVER_FLAGS) $(STATIC_NAME) $(LIB_OBJECTS)
 
 dynamic: $(LIB_OBJECTS)
-	$(LINKER) -shared -soname $(SONAME) -o $(REAL_NAME)  $(LIB_OBJECTS)
+	$(COMPILER) -shared -o $(REAL_NAME)  $(LIB_OBJECTS)
 
 
 headers:
